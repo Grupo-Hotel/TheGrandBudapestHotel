@@ -140,8 +140,8 @@ function validar(input, message, pattern, maximo) {
 //}
 function LimpiaFormulario() {
   //var formulario = document.getElementById('formul');
-  var nombre = document.getElementsByName('name').value;
-  var apellido = document.getElementsByName('lastname').values;
+  var nombre = document.getElementsByName('name').entries;
+  var apellido = document.getElementsByName('lastname').entries.value;
   var correo = document.getElementById('userEmail').value;
   var datos = `El nombre es,  ${nombre}  ${apellido} y su email es ${correo}`
   alert(datos);
