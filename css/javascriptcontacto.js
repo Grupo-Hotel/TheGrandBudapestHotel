@@ -138,11 +138,11 @@ function validar(input, message, pattern, maximo) {
 //  var datos = 
 // / //formulario.reset(); 
 //}
-function LimpiaFormulario() {
+function getName() {
   //var formulario = document.getElementById('formul');
-  var nombre = document.getElementsByName('name');
-  var apellido = document.getElementsByName('lastname');
-  var correo = document.getElementById('userEmail');
+  var nombre = document.getElementsByName('name').value;
+  var apellido = document.getElementsByName('lastname').values;
+  var correo = document.getElementById('userEmail').value;
   var datos = `El nombre es,  ${nombre}  ${apellido} y su email es ${correo}`
   alert(datos);
   //formulario.reset(); 
