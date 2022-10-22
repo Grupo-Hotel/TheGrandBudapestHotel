@@ -9,7 +9,7 @@
     // El tamaño maximo para nuestro input
     const maximo = 11;
     // El pattern que vamos a comprobar
-    const pattern = new RegExp('^[A-Z\s]+$', 'i');
+    const pattern = new RegExp('^[A-Z ]+$', 'i');
 
     return validar(input, message,pattern, maximo);
   }
