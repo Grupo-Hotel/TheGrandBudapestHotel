@@ -133,7 +133,7 @@ function validar(input, message, pattern, maximo) {
   return isValid;
 }
 
-function getName() {
+function LimpiaFormulario() {
   var formulario = document.getElementById('formul');
   formulario.reset(); 
 }
