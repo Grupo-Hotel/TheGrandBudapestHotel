@@ -133,17 +133,7 @@ function validar(input, message, pattern, maximo) {
   return isValid;
 }
 
-//function LimpiaFormulario() {
-//  var formulario = document.getElementById('formul');
-//  var datos = 
-// / //formulario.reset(); 
-//}
 function LimpiaFormulario() {
-  //var formulario = document.getElementById('formul');
-  var nombre = document.getElementsByName('name')[0].value;
-  var apellido = document.getElementsByName('lastname')[0].value;
-  var correo = document.getElementById('userEmail').value;
-  var datos = `Hola ${apellido}, ${nombre} tu email es: ${correo}`
-  alert(datos);
-  //formulario.reset(); 
+  var formulario = document.getElementById('formul');
+  formulario.reset(); 
 }
