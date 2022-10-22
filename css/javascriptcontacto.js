@@ -138,7 +138,7 @@ function validar(input, message, pattern, maximo) {
 //  var datos = 
 // / //formulario.reset(); 
 //}
-function getName() {
+function LimpiaFormulario() {
   //var formulario = document.getElementById('formul');
   var nombre = document.getElementsByName('name');
   var apellido = document.getElementsByName('lastname');
