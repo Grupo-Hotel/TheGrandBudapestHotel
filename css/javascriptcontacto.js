@@ -143,7 +143,7 @@ function LimpiaFormulario() {
   var nombre = document.getElementsByName('name')[0].value;
   var apellido = document.getElementsByName('lastname')[0].value;
   var correo = document.getElementById('userEmail').value;
-  var datos = `El nombre es,  ${nombre}  ${apellido} y su email es ${correo}`
+  var datos = `Hola ${apellido}, ${nombre} tu email es: ${correo}`
   alert(datos);
   //formulario.reset(); 
 }
