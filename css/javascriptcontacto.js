@@ -9,7 +9,7 @@ function validarUserName() {
   // El tamaño maximo para nuestro input
   const maximo = 11;
   // El pattern que vamos a comprobar
-  const pattern = new RegExp('^[A-Z\s]+$', 'i');
+  const pattern = new RegExp('^[A-Z ]+$', 'i');
 
   return validar(input, message,pattern, maximo);
 }
@@ -24,7 +24,7 @@ function validarUserLastName() {
   // El tamaño maximo para nuestro input
   const maximo = 11;
   // El pattern que vamos a comprobar
-  const pattern = new RegExp('^[A-Z]+$', 'i');
+  const pattern = new RegExp('^[A-Z ]+$', 'i');
 
   return validar(input, message,pattern, maximo);
 }
@@ -133,7 +133,17 @@ function validar(input, message, pattern, maximo) {
   return isValid;
 }
 
-function LimpiaFormulario() {
-  var formulario = document.getElementById('formul');
-  formulario.reset(); 
+//function LimpiaFormulario() {
+//  var formulario = document.getElementById('formul');
+//  var datos = 
+// / //formulario.reset(); 
+//}
+function getName() {
+  //var formulario = document.getElementById('formul');
+  var nombre = document.getElementsByName('name');
+  var apellido = document.getElementsByName('lastname');
+  var correo = document.getElementById('userEmail');
+  var datos = `El nombre es,  ${nombre}  ${apellido} y su email es ${correo}`
+  alert(datos);
+  //formulario.reset(); 
 }
